@@ -1,0 +1,58 @@
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-1">
+</div>
+<div class="col-md-8 col-sm-8 col-xs-10">
+    <div class="row">
+        <% @data.each do |d| %>
+            <div class="x_panel form">
+                <div class="x_content">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-2 col-xs-12">
+                            <div class="image">
+                             <%if d.images_1.blank? %>
+                             <% else %>
+                               <img src="<%= d.images_1%>",style="width:30%" >
+                            <% end %>   
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-10 col-xs-12">
+                            <div class="row">
+                                <div class="Lister_name">
+                                    <p class=""><%= d.lister %></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="Lister_name">
+                                    <p class=""><%= d.phone %></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="Lister_name">
+                                    <p class=""><%= d.property_size %></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="Lister_name">
+                                    <p class=""><%= d.price %></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="Lister_name">
+                                    <p class=""><%= d.property_type %></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="Lister_name">
+                                    <p class=""><%= d.property_description %></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <%end%>
+    </div>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-1">
+</div>
+</div>

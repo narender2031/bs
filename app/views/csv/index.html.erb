@@ -1,0 +1,16 @@
+<div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="form">
+        <div class="row">
+            <%= form_tag csv_path , multipart: true do %>
+                <fieldset>
+                    <div class="csv-upload-button">
+                        <%= file_field_tag :file %>
+                    </div>
+                    <div class="">
+                        <%= submit_tag "Import" , class:"import-csv-button"%>
+                    </div> 
+                </fieldset>
+            <% end %>
+        </div>
+    </div>
+</div>

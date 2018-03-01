@@ -1,0 +1,37 @@
+<div class="row">
+<div class="col-md-4 col-sm-4 col-xs-12">
+</div>
+<div class="col-md-4 col-sm-4 col-xs-12">
+    <div class="form" style="margin-top:20px;">
+        <center>
+            <div class="form_tag">
+                <%= form_for @property, url: entery_path do  |f| %>
+                    <%= f.text_field :lister, placeholder:"e.g lister_name", class:"search_field" %>
+                    <br>
+                    <%= f.text_field :property_type, placeholder:"e.g property/type", class:"search_field" %>
+                    <br>
+                    <%= f.text_field :price, placeholder:"e.g price", class:"search_field" %>
+                    <br>
+                    <%= f.text_field :property_size, placeholder:"e.g property size", class:"search_field" %>
+                    <br>
+                    <%= f.text_field :city, placeholder:"e.g city, mohali", class:"search_field"  %>
+                    <br>
+                    <%= f.text_field :type_of_lister, placeholder:"e.g owner/broker", class:"search_field" %>
+                    <br>
+                    <%= f.text_field :property_status, placeholder:"e.g lees/sale", class:"search_field" %>
+                    <br>
+                    <%= f.text_field :property_location, placeholder:"e.g location, mohali", class:"search_field"  %>
+                    <br>
+                    <%= f.phone_field :phone, placeholder:"e.g phone", class:"search_field"  %>
+                    <br>
+                    <%= f.text_area :property_description, placeholder:"e.g property_description", class:"search_field" %>
+                    <br>
+                    <%= f.submit "Insert", class:"submit_search" %>
+                <% end %>
+            </div>
+        </center>    
+    </div>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-12">
+</div>
+</div>
